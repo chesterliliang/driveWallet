@@ -1,0 +1,20 @@
+.container {
+  span {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline;
+    text-overflow: clip;
+  }
+
+  span:first-child {
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+
+  span + span {
+    direction: rtl;
+    text-align: left;
+  }
+}

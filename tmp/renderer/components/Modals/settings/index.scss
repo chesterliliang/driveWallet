@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 63px 80px;
+  position: relative;
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h3 {
+    margin: 0px;
+    margin-left: 18px;
+    padding: 0px;
+    color: rgba(255,255,255,0.6);
+    font-size: 20px;
+    line-height: inherit;
+    font-weight: inherit;
+    display: unset;
+  }
+}
+
+.relativeField {
+  margin-left: 18px;
+  position: relative;
+}
+
+.version{
+  position: relative;
+  bottom: 0px;
+  text-align: right; 
+  color: dimgray;
+  font-size: 8px;
+  font-weight: lighter;
+
+  h4 {
+    margin: 0px;
+    padding: 0px;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    display: unset;
+  }
+}

@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 63px 80px;
+  position: relative;
+
+  .collapse {
+    display: flex;
+
+    > div {
+      flex: 1;
+    }
+
+    > div + div {
+      flex: 1 0 100%;
+      margin-left: 30px;
+    }
+  }
+
+  .relativeField {
+    position: relative;
+    flex: 1 0 100%
+  }
+
+  .buttonDiv {
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+  }
+
+  .toggleDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 40%;
+  }
+
+  .icons {
+    position: absolute;
+    top: 23px;
+    right: 0px;
+  }
+}
+
+.currencyField {
+  display: flex;
+  align-items: center;
+
+  b {
+    padding-left: 10px;
+    color: white;
+    font-weight: normal;
+  }
+
+  span {
+    padding-left: 10px;
+    color: gray;
+  }
+}

@@ -1,0 +1,10 @@
+version: 1.0.2
+files:
+  - url: WOOKONG_Solo_1.0.2.zip
+    sha512: 7s4R/Ht3e/KTXmY6qH/4i1HMZq9aLjL9ItCxSQYhpKD3AMcgUrGKFhIKCYBOMG+cZc+T8IOvJ4G0mxEEQfCQ1g==
+  - url: WOOKONG_Solo_1.0.2.dmg
+    sha512: /hBf2c2BOQEtgr5HeMlnNFqxgls/pXT6Z2eKF2zqMH1n8MC0HnVGi5evKdnRgCsurLzVu+Jvj4riLaayVeKjjw==
+    size: 75154359
+path: WOOKONG_Solo_1.0.2.zip
+sha512: 7s4R/Ht3e/KTXmY6qH/4i1HMZq9aLjL9ItCxSQYhpKD3AMcgUrGKFhIKCYBOMG+cZc+T8IOvJ4G0mxEEQfCQ1g==
+releaseDate: '2018-08-21T11:47:29.012Z'

@@ -1,0 +1,129 @@
+html {
+  font-family: Helvetica,"Microsoft YaHei",Arial,Roboto,sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  background-color: #1f1f1f;
+}
+
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #ee602b;
+
+  position: fixed;
+  z-index: 4300;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #ee602b, 0 0 5px #ee602b;
+  opacity: 1.0;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 4300;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: #ee602b;
+  border-left-color: #ee602b;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+          animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+.toastify-content {
+  padding: 8px 15px 8px 15px !important;
+  font-size: 14px !important;
+}
+
+.toastify__body {
+  width: 98% !important;
+  margin: 0 !important;
+  align-items: center !important;
+  display: flex !important;
+}
+
+.toastify {
+  z-index: 4400 !important;
+}
+
+.dark-toast {
+  background: #000 !important;
+  color: #f8f8f8 !important;
+}
+
+.dark-toast > .toastify__close {
+  color: #f8f8f8 !important;
+}
+
+.transparent-progress{
+  background: rgba(255,255,255,.7) !important;
+}
+
+.primary-background {
+  background: #ee602b !important;
+}
+
+.scrollable {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

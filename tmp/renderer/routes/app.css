@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  flex: 1;
+  margin: 10px;
+  background: #171717;
+}

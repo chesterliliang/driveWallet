@@ -1,0 +1,26 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.nbltrust.wookong-solo
+asar: false
+files:
+  - '**/*'
+  - dist/*
+publish:
+  provider: generic
+  url: 'https://nebuladownload.oss-cn-beijing.aliyuncs.com/wookong/personal/'
+mac:
+  category: public.app-category.finance
+  target:
+    - dmg
+    - zip
+  type: distribution
+  artifactName: '${name}_${version}.${ext}'
+  identity: Yanfeng Chen (M5LYGNKFLB)
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  artifactName: '${name}_Setup_${version}.${ext}'
+electronVersion: 1.7.9

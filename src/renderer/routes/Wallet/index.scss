@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #1f1f1f;
+
+    .logo {
+      width: 180px;
+      height: 56px;
+      background-image: url(~assets/logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 10px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .tab {
+      width: 200px;
+      height: 76px;
+      flex: 0 0 auto;
+      margin-right: 8px;
+      padding-top: 1px;
+      padding-bottom: 0px;
+      .icon {
+        width: 64px;
+        height: 64px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .text {
+        font-size: 12px;
+        color: white;
+      }
+      .subItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

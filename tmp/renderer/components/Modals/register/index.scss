@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 63px 80px;
+  position: relative;
+}
+
+
+.titleContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  h3 {
+    margin: 0px;
+    padding: 0px;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    display: unset;
+  }
+}
+.textfield{
+  display: flex;
+  width:100%;
+}
+.captchafield{
+  display: flex;
+  width:100%;
+  align-items: flex-end ;
+  
+  .captchaLabel{
+    display: inline-block;
+    width: 50px;
+    margin-left: 6px;
+  }
+}
+
+.relativeField {
+  position: relative;
+}

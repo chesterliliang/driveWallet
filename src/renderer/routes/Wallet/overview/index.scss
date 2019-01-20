@@ -1,0 +1,387 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  .list {
+    flex: 1;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 60px;
+
+    .totalPrice {
+      color: white;
+      background-color: #171717;
+      height: 75px;
+      position: fixed;
+      top: 104px;
+      right: 105px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 15px;
+      z-index: 10;
+
+      :first-child {
+        align-self: flex-end;
+        margin-right: 12px;
+        margin-bottom: -16px;
+      }
+
+      :last-child {
+        border: 1px solid transparent;
+        border-radius: 20px;
+        padding: 4px 10px;
+        margin-top: 5px;
+        background-color: #FF4200;
+      }
+    }
+
+    .fiatParent {
+      position: absolute;
+      right: 180px;
+      top: 8px;
+      padding: 4px 0;
+      background-color: #171717;
+      z-index: 3;
+    }
+
+    .fiatParentERC20 {
+      top: 12px !important;
+    }
+
+    .verticalLine {
+      position: fixed;
+      width: 0;
+      border-right: 2px solid white;
+      right: 131px;
+      top: 24%;
+      bottom: 5%;
+      opacity: 0.1;
+      z-index: 1;
+    }
+
+    .totalVerticalLine {
+      position: absolute;
+      width: 0;
+      height: 102px;
+      border-right: 2px solid white;
+      right: 196px;
+      top: 56px;
+      opacity: 0.1;
+      z-index: 1;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      padding-bottom: 12px;
+      padding-top: 50px;
+      padding-left: 49px;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .name {
+        position: absolute;
+        top: 4px;
+        left: 49px;
+        font-size: 18px;
+        font-weight: normal;
+        color: #989898;
+        margin: 0;
+        padding: 0;
+      }
+
+      .fieldDiv {
+        position: relative;
+
+        > h4 {
+          position: absolute;
+          top: 13px;
+          left: 3px;
+          font-size: 16px;
+          font-weight: normal;
+          color: #989898;
+          margin: 0;
+          padding: 0;
+        }
+
+        .textDiv {
+          font-size: 16px;
+          line-height: 24px;
+          width: 600px;
+          height: 48px;
+          display: inline-block;
+          position: relative;
+          background-color: transparent;
+
+          .copy {
+            float: right;
+            height: 48px;
+            margin-right: -13px;
+          }
+
+          .showAddressDiv {
+            float: right;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 5px;
+            background-color: #333333;
+            cursor: pointer;
+            opacity: 0.7;
+
+            .showAddress {
+              width: 20px;
+              height: 20px;
+              margin-top: 2px;
+              margin-left: 2px;
+              opacity: 0.9;          
+            }
+          }
+          .showAddressDiv:hover {
+            opacity: 1;
+          }
+
+          .qrWrapper {
+            display: flex;
+            pointer-events: auto;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            float: right;
+            margin-right: -12px;
+            margin-top: -1px;
+
+            .qrIcon {
+              width: 12px;
+              height: 12px;
+              background-image: url(~assets/icon_qrcode.png);
+              background-size: contain;
+            }
+          }
+
+          .historyWrapper {
+            display: flex;
+            pointer-events: auto;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            float: right;
+            margin-right: -10px;
+            margin-top: 3px;
+
+            .historyIcon {
+              width: 12px;
+              height: 12px;
+              background-image: url(~assets/history@2x.png);
+              background-size: contain;
+            }
+          }
+
+          .text {
+            float: right;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: white;
+            opacity: 1;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            text-align: right;
+            line-height: 48px;
+            font-style: inherit;
+            font-variant: inherit;
+            font-weight: inherit;
+            font-stretch: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            user-select: none;
+          }
+
+          hr {
+            width: 100%;
+            bottom: 8px;
+            position: absolute;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
+            box-sizing: content-box;
+            margin: 0px;
+          }
+        }
+
+        .priceDiv {
+          padding: 4px 8px;
+          color: white;
+          // position: absolute;
+          // right: 175px;
+          // top: 10px;
+          border: 1px solid transparent;
+          border-radius: 20px;
+          font-size: 13px;
+
+          .verticalLine {
+            position: absolute;
+            width: 0;
+            border-right: 2px solid white;
+            right: 20px;
+            top: 28px;
+            opacity: 0.1;
+          }
+
+          .verticalLineNoERC20 {
+            position: absolute;
+            width: 0;
+            height: 182px;
+            border-right: 2px solid white;
+            right: 20px;
+            top: 28px;
+            opacity: 0.1;
+          }
+
+          .verticalLineNoNEOTokens {
+            position: absolute;
+            width: 0;
+            height: 28px;
+            border-right: 2px solid white;
+            right: 20px;
+            top: 28px;
+            opacity: 0.1;
+          }
+
+          .verticalLineNEOTokens {
+            position: absolute;
+            width: 0;
+            border-right: 2px solid white;
+            right: 20px;
+            top: 28px;
+            opacity: 0.1;
+          }
+
+
+
+        }
+        
+        .BTC {
+          background-color: #e99400;
+
+          div {
+            height: 182px;
+          }
+        }
+
+        .ETH {
+          background-color: #6b7fed;
+
+          div {
+            height: 25px;
+          }
+        }
+
+        .EOS {
+          background-color: #000000;
+
+          div {
+            height: 182px;
+          }
+        }
+
+        .USDT {
+          background-color: #4ea07a;
+          
+          div {
+            height: 182px;
+          }
+        }
+
+        .XRP {
+          background-color: #24292f;
+
+          div {
+            height: 182px;
+          }
+        }
+
+        .LTC {
+          background-color: #bebbbb;
+
+          div {
+            height: 182px;
+          }
+        }
+
+        .CYB {
+          background-color: #656565;
+
+          div {
+            height: 182px;
+          }
+        }
+
+        .ETC {
+          background-color: #47822d;
+
+          div {
+            height: 182px;
+          }
+        }
+
+        .NEO {
+          background-color: #7abd00;
+        }
+        
+        .ERC20 {
+          top: 16px !important;
+          background-color: #80C1FF;
+
+          div {
+            height: 190px;
+          }
+        }
+
+        .NEOTokens {
+          top: 16px !important;
+          background-color: #171717;
+        }
+
+        .tokens {
+          margin-left: 100px;
+          margin-top: 10px;
+          width: 500px;
+          display: flex;
+          flex-direction: row-reverse;
+          flex-wrap: wrap;
+        }
+      }
+    }
+    .button {
+      font-size: 16px;
+      line-height: 24px;
+      width: 600px;
+      height: 48px;
+      display: inline-block;
+      position: relative;
+      background-color: transparent;
+    }
+  }
+}

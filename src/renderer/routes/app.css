@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  flex: 1;
+  margin: 10px;
+  background: #171717;
+}
+
+.progressBar {
+  position: absolute;
+  right: 5px;
+  bottom: 30px;
+  width: 15%;
+}
+
+.progressBody {
+  position: relative;
+}
+
+.progress {
+  height: 60px;
+  background: #1f1f1f;
+}

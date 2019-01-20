@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 63px 80px;
+  position: relative;
+
+  .collapse {
+    display: flex;
+
+    > div {
+      flex: 1 0 30%;
+    }
+
+    > div + div {
+      flex: 1 0 30%;
+      margin-left: 30px;
+    }
+  }
+
+  .relativeField {
+    position: relative;
+    flex: 1 0 100%
+  }
+
+  .buttonDiv {
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+  }
+
+  .toggleDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 40%;
+  }
+
+  .icons {
+    position: absolute;
+    top: 23px;
+    right: 0px;
+  }
+
+  .addMemo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 10%;
+    width: 40%;
+  }
+
+  .addMemoIcon {
+    position: absolute;
+    top: 30px;
+    left: -12px;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+
+    span {
+      margin-left: -2px;
+    }
+  }
+}
+
+.currencyField {
+  display: flex;
+  align-items: center;
+
+  b {
+    padding-left: 10px;
+    color: white;
+    font-weight: normal;
+  }
+
+  span {
+    padding-left: 10px;
+    color: gray;
+  }
+}
+
+.feeField {
+  position: relative;
+}
+
+.hackDivamount {
+  position: absolute;
+  width: 165px;
+  height: 33px;
+  display: flex;
+  right: -7px;
+  top: 27px;
+  align-items: center;
+  cursor: pointer;
+  z-index: 20;
+  background-color: #171717;
+}
+
+.hackDivfee {
+  position: absolute;
+  width: 85px;
+  height: 33px;
+  display: flex;
+  right: -7px;
+  top: 27px;
+  align-items: center;
+  cursor: pointer;
+  z-index: 20;
+  background-color: #171717;
+}
+
+.mentionDivfee, .mentionDivamount {
+  position: absolute;
+  display: flex;
+  right: -7px;
+  top: 27px;
+  align-items: center;
+  cursor: pointer;
+  z-index: 21;
+
+  span:first-of-type {
+    padding-bottom: 2px;
+    padding-right: 3px;
+  }
+
+  span {
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+  }
+}
+
+.mentionPng {
+  width: 16px;
+  height: 16px;
+  right: 4px;
+  bottom: 24px;
+  margin-left: -10px;
+}
+
+.miniBalanceError {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 30;
+  height: 18px;
+  margin-left: 60%;
+
+  span {
+    margin-right: 5px;
+    color: white;
+  }
+  
+}
+
+.accountNotActivedSpan {
+  color: gray !important;
+}
+
+.accountNotActivedMention {
+  span {
+    white-space: normal !important;
+    word-break: break-word;
+    padding: 0 !important;
+  }
+}
+
+.hiden {
+  display: none;
+}

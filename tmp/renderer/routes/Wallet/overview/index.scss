@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  .list {
+    flex: 1;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 60px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      padding-bottom: 12px;
+      padding-top: 50px;
+      padding-left: 49px;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .name {
+        position: absolute;
+        top: 4px;
+        left: 49px;
+        font-size: 18px;
+        font-weight: normal;
+        color: #989898;
+        margin: 0;
+        padding: 0;
+      }
+
+      .fieldDiv {
+        position: relative;
+
+        > h4 {
+          position: absolute;
+          top: 13px;
+          left: 3px;
+          font-size: 16px;
+          font-weight: normal;
+          color: #989898;
+          margin: 0;
+          padding: 0;
+        }
+
+        .textDiv {
+          font-size: 16px;
+          line-height: 24px;
+          width: 600px;
+          height: 48px;
+          display: inline-block;
+          position: relative;
+          background-color: transparent;
+
+          .copy {
+            float: right;
+            height: 48px;
+            margin-right: -13px;
+          }
+
+          .qrWrapper {
+            display: flex;
+            pointer-events: auto;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            float: right;
+            margin-right: -12px;
+            margin-top: -1px;
+
+            .qrIcon {
+              width: 12px;
+              height: 12px;
+              background-image: url('assets/icon_qrcode.png');
+              background-size: contain;
+            }
+          }
+
+          .historyWrapper {
+            display: flex;
+            pointer-events: auto;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            float: right;
+            margin-right: -10px;
+            margin-top: 3px;
+
+            .historyIcon {
+              width: 12px;
+              height: 12px;
+              background-image: url('assets/history@2x.png');
+              background-size: contain;
+            }
+          }
+
+          .text {
+            float: right;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: white;
+            opacity: 1;
+            -webkit-tap-highlight-color: transparent;
+            text-align: right;
+            line-height: 48px;
+            font-style: inherit;
+            font-variant: inherit;
+            font-weight: inherit;
+            font-stretch: inherit;
+            font-size: inherit;
+            font-family: inherit;
+          }
+
+          hr {
+            width: 100%;
+            bottom: 8px;
+            position: absolute;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
+            box-sizing: content-box;
+            margin: 0px;
+          }
+        }
+
+        .tokens {
+          margin-left: 100px;
+          margin-top: 10px;
+          width: 500px;
+          display: flex;
+          flex-direction: row-reverse;
+          flex-wrap: wrap;
+        }
+      }
+    }
+    .button {
+      font-size: 16px;
+      line-height: 24px;
+      width: 600px;
+      height: 48px;
+      display: inline-block;
+      position: relative;
+      background-color: transparent;
+    }
+  }
+}

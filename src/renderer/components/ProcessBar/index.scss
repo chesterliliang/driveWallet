@@ -1,0 +1,41 @@
+.updateInfoContainer {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .progressInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .processBar {
+    height: 7px;
+    width: 80%;
+  }
+
+  .processPer {
+    font-size: 14px;
+    margin-left: 10px;
+    color: white;
+  }
+
+  .greenFont {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 10px;
+  }
+
+  .whiteFontNoM {
+    color: white;
+  }
+
+  .whiteFont {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+}
+
+
+
